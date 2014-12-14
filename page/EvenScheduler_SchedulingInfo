@@ -1,51 +1,232 @@
 
 
 <!---Scheduling Change---!>
-->hostname: pc330.emulab.net Supervisor Id: 3a224881-acc3-456d-b591-6c4866402d2d
-->WorkerToExec: 
--->6701 => []
--->6703 => []
--->6702 => []
--->6700 => []
-->hostname: pc249.emulab.net Supervisor Id: f3a269d2-cb89-4257-a353-87964309685c
-->WorkerToExec: 
--->6703 => []
--->6700 => []
--->6702 => []
--->6701 => []
-->hostname: pc277.emulab.net Supervisor Id: 55cb8cbd-b4c3-43ae-896a-e4ef86068312
-->WorkerToExec: 
--->6701 => []
--->6700 => []
--->6703 => []
--->6702 => []
-->hostname: pc353.emulab.net Supervisor Id: 7b13721d-5a1b-4562-b350-0b52c41b33c9
-->WorkerToExec: 
--->6703 => []
--->6701 => []
--->6702 => []
--->6700 => []
-->hostname: pc263.emulab.net Supervisor Id: 0c6c72ec-49b4-4c2e-85a3-700bc5cf493e
-->WorkerToExec: 
--->6701 => []
--->6702 => []
--->6703 => []
--->6700 => []
-->hostname: pc250.emulab.net Supervisor Id: d7ba0c9a-8366-40de-ab3f-91ef61ecd93b
+->hostname: pc355.emulab.net Supervisor Id: f90d35a2-49bf-4852-b410-97013491daaa
 ->WorkerToExec: 
 -->6700 => []
 -->6701 => []
 -->6703 => []
 -->6702 => []
-->hostname: pc276.emulab.net Supervisor Id: 769df46b-4134-4bd9-96f0-e26b399d2d06
+->hostname: pc244.emulab.net Supervisor Id: 985711ec-e38c-40fe-b320-d58999aacc78
 ->WorkerToExec: 
+-->6701 => []
+-->6702 => []
+-->6703 => []
 -->6700 => []
+->hostname: pc251.emulab.net Supervisor Id: 7c13b037-1450-4345-a135-2277a8f8dad6
+->WorkerToExec: 
+-->6702 => []
+-->6703 => []
+-->6700 => []
+-->6701 => []
+->hostname: pc276.emulab.net Supervisor Id: c734f953-2b67-4007-a9eb-5e3a0d4a5d31
+->WorkerToExec: 
 -->6703 => []
 -->6702 => []
 -->6701 => []
-->hostname: pc246.emulab.net Supervisor Id: 3b6df69a-cecc-42e6-b2a5-a6923af66b44
+-->6700 => []
+->hostname: pc246.emulab.net Supervisor Id: 8efc10d3-3326-4ba0-8780-00115dc0b350
+->WorkerToExec: 
+-->6703 => []
+-->6700 => []
+-->6701 => []
+-->6702 => []
+->hostname: pc242.emulab.net Supervisor Id: a7d53500-6779-4df6-a3be-a5ac20d72b00
+->WorkerToExec: 
+-->6701 => []
+-->6700 => []
+-->6703 => []
+-->6702 => []
+->hostname: pc255.emulab.net Supervisor Id: af6b63d7-adf2-4c2b-a2a9-03356faa9208
 ->WorkerToExec: 
 -->6703 => []
 -->6701 => []
 -->6702 => []
 -->6700 => []
+->hostname: pc274.emulab.net Supervisor Id: 05ecb8ac-04a4-4c21-ab8e-9d0c65ffec11
+->WorkerToExec: 
+-->6702 => []
+-->6703 => []
+-->6700 => []
+-->6701 => []
+
+
+<!---Topology Info---!>
+
+!--Components--!
+->Topology: test1-2-1418524792
+-->Component: spout_head==test1-2-1418524792
+--->Parents: []
+--->Children: [bolt_transform]
+--->execs: [[49, 50], [53, 54], [55, 56], [51, 52]]
+-->Component: bolt_transform==test1-2-1418524792
+--->Parents: [spout_head]
+--->Children: [bolt_filter]
+--->execs: [[43, 44], [41, 42], [45, 46], [47, 48]]
+-->Component: bolt_aggregate==test1-2-1418524792
+--->Parents: [bolt_filter_2]
+--->Children: [bolt_output_sink]
+--->execs: [[5, 6], [1, 2], [7, 8], [3, 4]]
+-->Component: bolt_output_sink==test1-2-1418524792
+--->Parents: [bolt_aggregate]
+--->Children: []
+--->execs: [[33, 34], [39, 40], [35, 36], [37, 38]]
+-->Component: bolt_join==test1-2-1418524792
+--->Parents: [bolt_filter]
+--->Children: [bolt_filter_2]
+--->execs: [[27, 28], [31, 32], [29, 30], [25, 26]]
+-->Component: bolt_filter_2==test1-2-1418524792
+--->Parents: [bolt_join]
+--->Children: [bolt_aggregate]
+--->execs: [[19, 20], [23, 24], [21, 22], [17, 18]]
+-->Component: bolt_filter==test1-2-1418524792
+--->Parents: [bolt_transform]
+--->Children: [bolt_join]
+--->execs: [[9, 10], [13, 14], [15, 16], [11, 12]]
+
+
+<!---Scheduling Change---!>
+->hostname: pc355.emulab.net Supervisor Id: f90d35a2-49bf-4852-b410-97013491daaa
+->WorkerToExec: 
+-->6700 => [[43, 44]]
+-->6701 => [[29, 30]]
+-->6703 => [[1, 2]]
+-->6702 => [[15, 16]]
+->hostname: pc251.emulab.net Supervisor Id: 7c13b037-1450-4345-a135-2277a8f8dad6
+->WorkerToExec: 
+-->6702 => [[17, 18]]
+-->6703 => [[3, 4]]
+-->6700 => [[45, 46]]
+-->6701 => [[31, 32]]
+->hostname: pc276.emulab.net Supervisor Id: c734f953-2b67-4007-a9eb-5e3a0d4a5d31
+->WorkerToExec: 
+-->6703 => [[5, 6]]
+-->6702 => [[19, 20]]
+-->6701 => [[33, 34]]
+-->6700 => [[47, 48]]
+->hostname: pc246.emulab.net Supervisor Id: 8efc10d3-3326-4ba0-8780-00115dc0b350
+->WorkerToExec: 
+-->6703 => [[7, 8]]
+-->6700 => [[49, 50]]
+-->6701 => [[35, 36]]
+-->6702 => [[21, 22]]
+->hostname: pc242.emulab.net Supervisor Id: a7d53500-6779-4df6-a3be-a5ac20d72b00
+->WorkerToExec: 
+-->6701 => [[37, 38]]
+-->6700 => [[51, 52]]
+-->6703 => [[9, 10]]
+-->6702 => [[23, 24]]
+->hostname: pc255.emulab.net Supervisor Id: af6b63d7-adf2-4c2b-a2a9-03356faa9208
+->WorkerToExec: 
+-->6703 => [[11, 12]]
+-->6701 => [[39, 40]]
+-->6702 => [[25, 26]]
+-->6700 => [[53, 54]]
+->hostname: pc274.emulab.net Supervisor Id: 05ecb8ac-04a4-4c21-ab8e-9d0c65ffec11
+->WorkerToExec: 
+-->6702 => [[27, 28]]
+-->6703 => [[13, 14]]
+-->6700 => [[55, 56]]
+-->6701 => [[41, 42]]
+
+
+<!---Scheduling Change---!>
+->hostname: pc355.emulab.net Supervisor Id: f90d35a2-49bf-4852-b410-97013491daaa
+->WorkerToExec: 
+-->6700 => []
+-->6701 => []
+-->6703 => []
+-->6702 => []
+->hostname: pc244.emulab.net Supervisor Id: 4da49564-2f28-49c7-8e3d-b1e332225f0c
+->WorkerToExec: 
+-->6700 => []
+-->6703 => []
+-->6701 => []
+-->6702 => []
+->hostname: pc251.emulab.net Supervisor Id: 7c13b037-1450-4345-a135-2277a8f8dad6
+->WorkerToExec: 
+-->6702 => []
+-->6703 => []
+-->6700 => []
+-->6701 => []
+->hostname: pc276.emulab.net Supervisor Id: c734f953-2b67-4007-a9eb-5e3a0d4a5d31
+->WorkerToExec: 
+-->6703 => []
+-->6702 => []
+-->6701 => []
+-->6700 => []
+->hostname: pc246.emulab.net Supervisor Id: 8efc10d3-3326-4ba0-8780-00115dc0b350
+->WorkerToExec: 
+-->6703 => []
+-->6700 => []
+-->6701 => []
+-->6702 => []
+->hostname: pc242.emulab.net Supervisor Id: a7d53500-6779-4df6-a3be-a5ac20d72b00
+->WorkerToExec: 
+-->6701 => []
+-->6700 => []
+-->6703 => []
+-->6702 => []
+->hostname: pc255.emulab.net Supervisor Id: af6b63d7-adf2-4c2b-a2a9-03356faa9208
+->WorkerToExec: 
+-->6703 => []
+-->6701 => []
+-->6702 => []
+-->6700 => []
+->hostname: pc274.emulab.net Supervisor Id: 05ecb8ac-04a4-4c21-ab8e-9d0c65ffec11
+->WorkerToExec: 
+-->6702 => []
+-->6703 => []
+-->6700 => []
+-->6701 => []
+
+
+<!---Scheduling Change---!>
+->hostname: pc355.emulab.net Supervisor Id: f90d35a2-49bf-4852-b410-97013491daaa
+->WorkerToExec: 
+-->6700 => [[49, 50]]
+-->6701 => [[33, 34]]
+-->6703 => [[1, 2]]
+-->6702 => [[17, 18]]
+->hostname: pc244.emulab.net Supervisor Id: 4da49564-2f28-49c7-8e3d-b1e332225f0c
+->WorkerToExec: 
+-->6700 => [[51, 52]]
+-->6703 => [[3, 4]]
+-->6701 => [[35, 36]]
+-->6702 => [[19, 20]]
+->hostname: pc251.emulab.net Supervisor Id: 7c13b037-1450-4345-a135-2277a8f8dad6
+->WorkerToExec: 
+-->6702 => [[21, 22]]
+-->6703 => [[5, 6]]
+-->6700 => [[53, 54]]
+-->6701 => [[37, 38]]
+->hostname: pc276.emulab.net Supervisor Id: c734f953-2b67-4007-a9eb-5e3a0d4a5d31
+->WorkerToExec: 
+-->6703 => [[7, 8]]
+-->6702 => [[23, 24]]
+-->6701 => [[39, 40]]
+-->6700 => [[55, 56]]
+->hostname: pc246.emulab.net Supervisor Id: 8efc10d3-3326-4ba0-8780-00115dc0b350
+->WorkerToExec: 
+-->6703 => [[9, 10]]
+-->6700 => []
+-->6701 => [[41, 42]]
+-->6702 => [[25, 26]]
+->hostname: pc242.emulab.net Supervisor Id: a7d53500-6779-4df6-a3be-a5ac20d72b00
+->WorkerToExec: 
+-->6701 => [[43, 44]]
+-->6700 => []
+-->6703 => [[11, 12]]
+-->6702 => [[27, 28]]
+->hostname: pc255.emulab.net Supervisor Id: af6b63d7-adf2-4c2b-a2a9-03356faa9208
+->WorkerToExec: 
+-->6703 => [[13, 14]]
+-->6701 => [[45, 46]]
+-->6702 => [[29, 30]]
+-->6700 => []
+->hostname: pc274.emulab.net Supervisor Id: 05ecb8ac-04a4-4c21-ab8e-9d0c65ffec11
+->WorkerToExec: 
+-->6702 => [[31, 32]]
+-->6703 => [[15, 16]]
+-->6700 => []
+-->6701 => [[47, 48]]
