@@ -1,0 +1,483 @@
+
+
+<!---Topology Info---!>
+
+!--Components--!
+->Topology: test1-1-1424419084
+-->Component: center==test1-1-1424419084
+--->Parents: [spout_0, spout_1]
+--->Children: [bolt_output_0, bolt_output_1]
+--->execs: [[12, 12], [10, 10], [14, 14], [16, 16], [11, 11], [9, 9], [13, 13], [15, 15]]
+-->Component: bolt_output_0==test1-1-1424419084
+--->Parents: [center]
+--->Children: []
+--->execs: [[3, 3], [1, 1], [4, 4], [2, 2]]
+-->Component: bolt_output_1==test1-1-1424419084
+--->Parents: [center]
+--->Children: []
+--->execs: [[5, 5], [7, 7], [6, 6], [8, 8]]
+-->Component: spout_1==test1-1-1424419084
+--->Parents: []
+--->Children: [center]
+--->execs: [[22, 22], [24, 24], [23, 23], [21, 21]]
+-->Component: spout_0==test1-1-1424419084
+--->Parents: []
+--->Children: [center]
+--->execs: [[17, 17], [20, 20], [18, 18], [19, 19]]
+
+
+<!---Scheduling Change---!>
+->hostname: pc207.emulab.net Supervisor Id: 8782424a-868e-4c7b-94d2-e45da9d4a243
+->WorkerToExec: 
+-->6703 => [[1, 1]]
+        =>{bolt_output_0=1}
+-->6702 => [[9, 9]]
+        =>{center=1}
+-->6701 => [[17, 17]]
+        =>{spout_0=1}
+-->6700 => []
+->Overall Component Count:{bolt_output_0=1, center=1, spout_0=1}
+
+->hostname: pc293.emulab.net Supervisor Id: 3e934f57-c6a3-4488-8a2d-2dcabbc92384
+->WorkerToExec: 
+-->6700 => []
+-->6702 => [[10, 10]]
+        =>{center=1}
+-->6701 => [[18, 18]]
+        =>{spout_0=1}
+-->6703 => [[2, 2]]
+        =>{bolt_output_0=1}
+->Overall Component Count:{bolt_output_0=1, center=1, spout_0=1}
+
+->hostname: pc328.emulab.net Supervisor Id: caedf995-6f68-4ecd-9c5b-b8cd6df9bfc8
+->WorkerToExec: 
+-->6700 => []
+-->6703 => [[3, 3]]
+        =>{bolt_output_0=1}
+-->6701 => [[19, 19]]
+        =>{spout_0=1}
+-->6702 => [[11, 11]]
+        =>{center=1}
+->Overall Component Count:{bolt_output_0=1, center=1, spout_0=1}
+
+->hostname: pc345.emulab.net Supervisor Id: f9b4f4e8-973c-4d5d-a10a-393e7cb5353f
+->WorkerToExec: 
+-->6701 => [[20, 20]]
+        =>{spout_0=1}
+-->6700 => []
+-->6702 => [[12, 12]]
+        =>{center=1}
+-->6703 => [[4, 4]]
+        =>{bolt_output_0=1}
+->Overall Component Count:{bolt_output_0=1, center=1, spout_0=1}
+
+->hostname: pc253.emulab.net Supervisor Id: c23e26b4-dabb-44c6-8af2-48b9b78f358e
+->WorkerToExec: 
+-->6702 => [[13, 13]]
+        =>{center=1}
+-->6703 => [[5, 5]]
+        =>{bolt_output_1=1}
+-->6701 => [[21, 21]]
+        =>{spout_1=1}
+-->6700 => []
+->Overall Component Count:{bolt_output_1=1, center=1, spout_1=1}
+
+->hostname: pc315.emulab.net Supervisor Id: 71174fc6-8e14-4932-a618-aeaaa520c1d7
+->WorkerToExec: 
+-->6702 => [[14, 14]]
+        =>{center=1}
+-->6701 => [[22, 22]]
+        =>{spout_1=1}
+-->6700 => []
+-->6703 => [[6, 6]]
+        =>{bolt_output_1=1}
+->Overall Component Count:{bolt_output_1=1, center=1, spout_1=1}
+
+->hostname: pc314.emulab.net Supervisor Id: 1d083b7b-82c7-4659-82b3-10399ead28b6
+->WorkerToExec: 
+-->6700 => []
+-->6701 => [[23, 23]]
+        =>{spout_1=1}
+-->6702 => [[15, 15]]
+        =>{center=1}
+-->6703 => [[7, 7]]
+        =>{bolt_output_1=1}
+->Overall Component Count:{bolt_output_1=1, center=1, spout_1=1}
+
+->hostname: pc271.emulab.net Supervisor Id: 17767df1-6028-4e8c-acfc-8ea06d748103
+->WorkerToExec: 
+-->6703 => [[8, 8]]
+        =>{bolt_output_1=1}
+-->6700 => []
+-->6702 => [[16, 16]]
+        =>{center=1}
+-->6701 => [[24, 24]]
+        =>{spout_1=1}
+->Overall Component Count:{bolt_output_1=1, center=1, spout_1=1}
+
+
+
+<!---Scheduling Change---!>
+->hostname: pc207.emulab.net Supervisor Id: 8782424a-868e-4c7b-94d2-e45da9d4a243
+->WorkerToExec: 
+-->6703 => [[1, 1]]
+        =>{bolt_output_0=1}
+-->6702 => [[9, 9]]
+        =>{center=1}
+-->6701 => [[17, 17]]
+        =>{spout_0=1}
+-->6700 => []
+->Overall Component Count:{bolt_output_0=1, center=1, spout_0=1}
+
+->hostname: pc293.emulab.net Supervisor Id: 3e934f57-c6a3-4488-8a2d-2dcabbc92384
+->WorkerToExec: 
+-->6700 => []
+-->6702 => [[10, 10]]
+        =>{center=1}
+-->6701 => [[18, 18]]
+        =>{spout_0=1}
+-->6703 => [[2, 2]]
+        =>{bolt_output_0=1}
+->Overall Component Count:{bolt_output_0=1, center=1, spout_0=1}
+
+->hostname: pc328.emulab.net Supervisor Id: caedf995-6f68-4ecd-9c5b-b8cd6df9bfc8
+->WorkerToExec: 
+-->6700 => []
+-->6703 => [[3, 3]]
+        =>{bolt_output_0=1}
+-->6701 => [[19, 19]]
+        =>{spout_0=1}
+-->6702 => [[11, 11]]
+        =>{center=1}
+->Overall Component Count:{bolt_output_0=1, center=1, spout_0=1}
+
+->hostname: pc345.emulab.net Supervisor Id: f9b4f4e8-973c-4d5d-a10a-393e7cb5353f
+->WorkerToExec: 
+-->6701 => [[20, 20]]
+        =>{spout_0=1}
+-->6700 => []
+-->6702 => [[12, 12]]
+        =>{center=1}
+-->6703 => [[4, 4]]
+        =>{bolt_output_0=1}
+->Overall Component Count:{bolt_output_0=1, center=1, spout_0=1}
+
+->hostname: pc253.emulab.net Supervisor Id: c23e26b4-dabb-44c6-8af2-48b9b78f358e
+->WorkerToExec: 
+-->6702 => [[13, 13]]
+        =>{center=1}
+-->6703 => [[5, 5]]
+        =>{bolt_output_1=1}
+-->6701 => [[21, 21]]
+        =>{spout_1=1}
+-->6700 => []
+->Overall Component Count:{bolt_output_1=1, center=1, spout_1=1}
+
+->hostname: pc315.emulab.net Supervisor Id: 71174fc6-8e14-4932-a618-aeaaa520c1d7
+->WorkerToExec: 
+-->6702 => [[14, 14]]
+        =>{center=1}
+-->6701 => [[22, 22]]
+        =>{spout_1=1}
+-->6700 => []
+-->6703 => [[6, 6]]
+        =>{bolt_output_1=1}
+->Overall Component Count:{bolt_output_1=1, center=1, spout_1=1}
+
+->hostname: pc314.emulab.net Supervisor Id: 1d083b7b-82c7-4659-82b3-10399ead28b6
+->WorkerToExec: 
+-->6700 => []
+-->6701 => [[23, 23]]
+        =>{spout_1=1}
+-->6702 => [[15, 15]]
+        =>{center=1}
+-->6703 => [[7, 7]]
+        =>{bolt_output_1=1}
+->Overall Component Count:{bolt_output_1=1, center=1, spout_1=1}
+
+
+
+<!---Scheduling Change---!>
+->hostname: pc207.emulab.net Supervisor Id: 8782424a-868e-4c7b-94d2-e45da9d4a243
+->WorkerToExec: 
+-->6703 => [[1, 1]]
+        =>{bolt_output_0=1}
+-->6702 => [[9, 9]]
+        =>{center=1}
+-->6701 => [[17, 17]]
+        =>{spout_0=1}
+-->6700 => [[8, 8]]
+        =>{bolt_output_1=1}
+->Overall Component Count:{bolt_output_0=1, bolt_output_1=1, center=1, spout_0=1}
+
+->hostname: pc293.emulab.net Supervisor Id: 3e934f57-c6a3-4488-8a2d-2dcabbc92384
+->WorkerToExec: 
+-->6700 => [[16, 16]]
+        =>{center=1}
+-->6702 => [[10, 10]]
+        =>{center=1}
+-->6701 => [[18, 18]]
+        =>{spout_0=1}
+-->6703 => [[2, 2]]
+        =>{bolt_output_0=1}
+->Overall Component Count:{bolt_output_0=1, center=2, spout_0=1}
+
+->hostname: pc328.emulab.net Supervisor Id: caedf995-6f68-4ecd-9c5b-b8cd6df9bfc8
+->WorkerToExec: 
+-->6700 => [[24, 24]]
+        =>{spout_1=1}
+-->6703 => [[3, 3]]
+        =>{bolt_output_0=1}
+-->6701 => [[19, 19]]
+        =>{spout_0=1}
+-->6702 => [[11, 11]]
+        =>{center=1}
+->Overall Component Count:{bolt_output_0=1, center=1, spout_0=1, spout_1=1}
+
+->hostname: pc345.emulab.net Supervisor Id: f9b4f4e8-973c-4d5d-a10a-393e7cb5353f
+->WorkerToExec: 
+-->6701 => [[20, 20]]
+        =>{spout_0=1}
+-->6700 => []
+-->6702 => [[12, 12]]
+        =>{center=1}
+-->6703 => [[4, 4]]
+        =>{bolt_output_0=1}
+->Overall Component Count:{bolt_output_0=1, center=1, spout_0=1}
+
+->hostname: pc253.emulab.net Supervisor Id: c23e26b4-dabb-44c6-8af2-48b9b78f358e
+->WorkerToExec: 
+-->6702 => [[13, 13]]
+        =>{center=1}
+-->6703 => [[5, 5]]
+        =>{bolt_output_1=1}
+-->6701 => [[21, 21]]
+        =>{spout_1=1}
+-->6700 => []
+->Overall Component Count:{bolt_output_1=1, center=1, spout_1=1}
+
+->hostname: pc315.emulab.net Supervisor Id: 71174fc6-8e14-4932-a618-aeaaa520c1d7
+->WorkerToExec: 
+-->6702 => [[14, 14]]
+        =>{center=1}
+-->6701 => [[22, 22]]
+        =>{spout_1=1}
+-->6700 => []
+-->6703 => [[6, 6]]
+        =>{bolt_output_1=1}
+->Overall Component Count:{bolt_output_1=1, center=1, spout_1=1}
+
+->hostname: pc314.emulab.net Supervisor Id: 1d083b7b-82c7-4659-82b3-10399ead28b6
+->WorkerToExec: 
+-->6700 => []
+-->6701 => [[23, 23]]
+        =>{spout_1=1}
+-->6702 => [[15, 15]]
+        =>{center=1}
+-->6703 => [[7, 7]]
+        =>{bolt_output_1=1}
+->Overall Component Count:{bolt_output_1=1, center=1, spout_1=1}
+
+
+
+<!---Scheduling Change---!>
+->hostname: pc207.emulab.net Supervisor Id: 8782424a-868e-4c7b-94d2-e45da9d4a243
+->WorkerToExec: 
+-->6703 => [[1, 1]]
+        =>{bolt_output_0=1}
+-->6700 => [[8, 8]]
+        =>{bolt_output_1=1}
+->Overall Component Count:{bolt_output_0=1, bolt_output_1=1}
+
+->hostname: pc293.emulab.net Supervisor Id: 3e934f57-c6a3-4488-8a2d-2dcabbc92384
+->WorkerToExec: 
+-->6700 => [[16, 16]]
+        =>{center=1}
+-->6703 => [[2, 2]]
+        =>{bolt_output_0=1}
+->Overall Component Count:{bolt_output_0=1, center=1}
+
+->hostname: pc328.emulab.net Supervisor Id: caedf995-6f68-4ecd-9c5b-b8cd6df9bfc8
+->WorkerToExec: 
+-->6700 => [[24, 24]]
+        =>{spout_1=1}
+-->6703 => [[3, 3]]
+        =>{bolt_output_0=1}
+->Overall Component Count:{bolt_output_0=1, spout_1=1}
+
+->hostname: pc345.emulab.net Supervisor Id: f9b4f4e8-973c-4d5d-a10a-393e7cb5353f
+->WorkerToExec: 
+-->6700 => []
+-->6703 => [[4, 4]]
+        =>{bolt_output_0=1}
+->Overall Component Count:{bolt_output_0=1}
+
+->hostname: pc253.emulab.net Supervisor Id: c23e26b4-dabb-44c6-8af2-48b9b78f358e
+->WorkerToExec: 
+-->6702 => [[13, 13]]
+        =>{center=1}
+-->6703 => [[5, 5]]
+        =>{bolt_output_1=1}
+-->6700 => []
+->Overall Component Count:{bolt_output_1=1, center=1}
+
+->hostname: pc315.emulab.net Supervisor Id: 71174fc6-8e14-4932-a618-aeaaa520c1d7
+->WorkerToExec: 
+-->6700 => []
+-->6703 => [[6, 6]]
+        =>{bolt_output_1=1}
+->Overall Component Count:{bolt_output_1=1}
+
+->hostname: pc314.emulab.net Supervisor Id: 1d083b7b-82c7-4659-82b3-10399ead28b6
+->WorkerToExec: 
+-->6700 => []
+-->6703 => [[7, 7]]
+        =>{bolt_output_1=1}
+->Overall Component Count:{bolt_output_1=1}
+
+
+
+<!---Scheduling Change---!>
+->hostname: pc207.emulab.net Supervisor Id: 8782424a-868e-4c7b-94d2-e45da9d4a243
+->WorkerToExec: 
+-->6703 => [[1, 1]]
+        =>{bolt_output_0=1}
+-->6702 => []
+-->6701 => []
+-->6700 => [[8, 8]]
+        =>{bolt_output_1=1}
+->Overall Component Count:{bolt_output_0=1, bolt_output_1=1}
+
+->hostname: pc293.emulab.net Supervisor Id: 3e934f57-c6a3-4488-8a2d-2dcabbc92384
+->WorkerToExec: 
+-->6700 => [[16, 16]]
+        =>{center=1}
+-->6702 => []
+-->6701 => []
+-->6703 => [[2, 2]]
+        =>{bolt_output_0=1}
+->Overall Component Count:{bolt_output_0=1, center=1}
+
+->hostname: pc328.emulab.net Supervisor Id: caedf995-6f68-4ecd-9c5b-b8cd6df9bfc8
+->WorkerToExec: 
+-->6700 => [[24, 24]]
+        =>{spout_1=1}
+-->6703 => [[3, 3]]
+        =>{bolt_output_0=1}
+-->6701 => []
+-->6702 => []
+->Overall Component Count:{bolt_output_0=1, spout_1=1}
+
+->hostname: pc345.emulab.net Supervisor Id: f9b4f4e8-973c-4d5d-a10a-393e7cb5353f
+->WorkerToExec: 
+-->6701 => []
+-->6700 => [[14, 14], [23, 23], [19, 19], [9, 9]]
+        =>{center=2, spout_0=1, spout_1=1}
+-->6702 => []
+-->6703 => [[4, 4]]
+        =>{bolt_output_0=1}
+->Overall Component Count:{bolt_output_0=1, center=2, spout_0=1, spout_1=1}
+
+->hostname: pc253.emulab.net Supervisor Id: c23e26b4-dabb-44c6-8af2-48b9b78f358e
+->WorkerToExec: 
+-->6703 => [[5, 5]]
+        =>{bolt_output_1=1}
+-->6701 => []
+-->6700 => [[10, 10], [20, 20], [15, 15]]
+        =>{center=2, spout_0=1}
+->Overall Component Count:{bolt_output_1=1, center=2, spout_0=1}
+
+->hostname: pc315.emulab.net Supervisor Id: 71174fc6-8e14-4932-a618-aeaaa520c1d7
+->WorkerToExec: 
+-->6702 => []
+-->6701 => []
+-->6700 => [[17, 17], [11, 11], [21, 21]]
+        =>{center=1, spout_0=1, spout_1=1}
+-->6703 => [[6, 6]]
+        =>{bolt_output_1=1}
+->Overall Component Count:{bolt_output_1=1, center=1, spout_0=1, spout_1=1}
+
+->hostname: pc314.emulab.net Supervisor Id: 1d083b7b-82c7-4659-82b3-10399ead28b6
+->WorkerToExec: 
+-->6700 => [[12, 12], [22, 22], [18, 18]]
+        =>{center=1, spout_0=1, spout_1=1}
+-->6701 => []
+-->6702 => []
+-->6703 => [[7, 7]]
+        =>{bolt_output_1=1}
+->Overall Component Count:{bolt_output_1=1, center=1, spout_0=1, spout_1=1}
+
+
+
+<!---Scheduling Change---!>
+->hostname: pc207.emulab.net Supervisor Id: 8782424a-868e-4c7b-94d2-e45da9d4a243
+->WorkerToExec: 
+-->6703 => [[1, 1]]
+        =>{bolt_output_0=1}
+-->6702 => [[13, 13]]
+        =>{center=1}
+-->6701 => []
+-->6700 => [[8, 8]]
+        =>{bolt_output_1=1}
+->Overall Component Count:{bolt_output_0=1, bolt_output_1=1, center=1}
+
+->hostname: pc293.emulab.net Supervisor Id: 3e934f57-c6a3-4488-8a2d-2dcabbc92384
+->WorkerToExec: 
+-->6700 => [[16, 16]]
+        =>{center=1}
+-->6702 => []
+-->6701 => []
+-->6703 => [[2, 2]]
+        =>{bolt_output_0=1}
+->Overall Component Count:{bolt_output_0=1, center=1}
+
+->hostname: pc328.emulab.net Supervisor Id: caedf995-6f68-4ecd-9c5b-b8cd6df9bfc8
+->WorkerToExec: 
+-->6700 => [[24, 24]]
+        =>{spout_1=1}
+-->6703 => [[3, 3]]
+        =>{bolt_output_0=1}
+-->6701 => []
+-->6702 => []
+->Overall Component Count:{bolt_output_0=1, spout_1=1}
+
+->hostname: pc345.emulab.net Supervisor Id: f9b4f4e8-973c-4d5d-a10a-393e7cb5353f
+->WorkerToExec: 
+-->6701 => []
+-->6700 => [[14, 14], [23, 23], [19, 19], [9, 9]]
+        =>{center=2, spout_0=1, spout_1=1}
+-->6702 => []
+-->6703 => [[4, 4]]
+        =>{bolt_output_0=1}
+->Overall Component Count:{bolt_output_0=1, center=2, spout_0=1, spout_1=1}
+
+->hostname: pc253.emulab.net Supervisor Id: c23e26b4-dabb-44c6-8af2-48b9b78f358e
+->WorkerToExec: 
+-->6702 => []
+-->6703 => [[5, 5]]
+        =>{bolt_output_1=1}
+-->6701 => []
+-->6700 => [[10, 10], [20, 20], [15, 15]]
+        =>{center=2, spout_0=1}
+->Overall Component Count:{bolt_output_1=1, center=2, spout_0=1}
+
+->hostname: pc315.emulab.net Supervisor Id: 71174fc6-8e14-4932-a618-aeaaa520c1d7
+->WorkerToExec: 
+-->6702 => []
+-->6701 => []
+-->6700 => [[17, 17], [11, 11], [21, 21]]
+        =>{center=1, spout_0=1, spout_1=1}
+-->6703 => [[6, 6]]
+        =>{bolt_output_1=1}
+->Overall Component Count:{bolt_output_1=1, center=1, spout_0=1, spout_1=1}
+
+->hostname: pc314.emulab.net Supervisor Id: 1d083b7b-82c7-4659-82b3-10399ead28b6
+->WorkerToExec: 
+-->6700 => [[12, 12], [22, 22], [18, 18]]
+        =>{center=1, spout_0=1, spout_1=1}
+-->6701 => []
+-->6702 => []
+-->6703 => [[7, 7]]
+        =>{bolt_output_1=1}
+->Overall Component Count:{bolt_output_1=1, center=1, spout_0=1, spout_1=1}
+
